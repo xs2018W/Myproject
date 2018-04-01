@@ -1,2 +1,2 @@
 实验截图  
-![][Resultpicture/002.png]
+![](Resultpicture/002.png)
