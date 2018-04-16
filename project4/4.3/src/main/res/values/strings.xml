@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">4.3</string>
+    <string name="word">Hello World!</string>
+    <string name="type_list">字体大小</string>
+    <string name="small">小号</string>
+    <string name="middle">中号</string>
+    <string name="largest">大号</string>
+    <string name="normal">普通菜单</string>
+    <string name="color_list">字体颜色</string>
+    <string name="black_color">黑色</string>
+    <string name="red_color">红色</string>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/type_list">
+        <menu>
+            <item
+                android:id="@+id/small_type"
+                android:title="@string/small"/>
+            <item
+                android:id="@+id/middle_type"
+                android:title="@string/middle"/>
+            <item
+                android:id="@+id/largest_type"
+                android:title="@string/largest"/>
+        </menu>
+
+    </item>
+    <item
+        android:id="@+id/normal"
+        android:title="@string/normal">
+    </item>
+    <item android:title="@string/color_list">
+        <menu>
+            <item
+                android:id="@+id/red_color"
+                android:title="@string/red_color" />
+            <item
+                android:id="@+id/black_color"
+                android:title="@string/black_color"/>
+        </menu>
+    </item>
+</menu>
