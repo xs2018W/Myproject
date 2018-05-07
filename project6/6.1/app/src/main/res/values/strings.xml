@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">project6</string>
+    <string name="Internet">输入网址 http://www.baidu.com</string>
+    <string name="button">浏览该网页</string>
+</resources>
