@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <PreferenceCategory
+            android:title="@string/inline_preferences">
+            
+        <CheckBoxPreference
+                android:key="checkbox_preference"
+                android:title="@string/title_checkbox"
+                android:summary="@string/summary_checkbox" />
+
+    </PreferenceCategory>
+                
+    <PreferenceCategory
+            android:title="@string/dialog_based">
+
+        <EditTextPreference
+                android:key="edittext_preference"
+                android:title="@string/title_edittext"
+                android:summary="@string/summary_edittext"
+                android:dialogTitle="@string/title_edittext_dialog" />
+                
+        <ListPreference
+                android:key="list_preference"
+                android:title="@string/title_list_preference"
+                android:summary="@string/summary_list"
+                android:entries="@array/list_entries"
+                android:entryValues="@array/list_entryvalues"
+                android:dialogTitle="@string/title_list_dialog" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            android:title="@string/launch_preferences">
+        <PreferenceScreen
+                android:key="screen_preference"
+                android:title="@string/title_screen"
+                android:summary="@string/summary_screen">
+                     
+            <CheckBoxPreference
+                    android:key="next_screen_checkbox_preference"
+                    android:title="@string/title_nextscreen"
+                    android:summary="@string/summary_nextscreen" />
+                
+        </PreferenceScreen>
+
+        <PreferenceScreen
+                android:title="@string/title_intent"
+                android:summary="@string/summary_intent">
+
+            <intent android:action="android.intent.action.VIEW"
+                    android:data="http://www.baidu.com/" />
+
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+            android:title="@string/preference_attributes">
+    
+        <CheckBoxPreference
+                android:key="parent_checkbox_preference"
+                android:title="@string/title_parent"
+                android:summary="@string/summary_parent" />
+
+        <CheckBoxPreference
+                android:key="child_checkbox_preference"
+                android:dependency="parent_checkbox_preference"
+                android:layout="?android:attr/preferenceLayoutChild"
+                android:title="@string/title_child"
+                android:summary="@string/summary_child" />
+            
+    </PreferenceCategory>
+    
+</PreferenceScreen>
